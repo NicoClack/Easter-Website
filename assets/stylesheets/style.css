@@ -1,0 +1,88 @@
+strike {
+    text-decoration: line-through;
+}
+body {
+    background-image: url("../imgs/egg.png");
+    backdrop-filter: blur(3px);
+    background-repeat: repeat;
+    background-size: 10%;
+}
+a {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+p, li {
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1, h2, h3 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+}
+h2 {
+    font-size: 90%;
+}
+h3 {
+    font-size: 60%;
+}
+.ad, .newsletter {
+    border-color: #A89932;
+    border-style: dotted;
+    border-width: 2px;
+
+    background-color: white;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    white-space: nowrap;
+}
+.adInfo {
+    padding-top: 30px;
+    font-size: 15px;
+}
+.adArrow {
+    width: 20%;
+    height: 100%;
+}
+.adArrowCentred {
+    width: 20%;
+    height: 5%;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.ad3dText {
+    width: 80%;
+    height: 100%;
+}
+.adLink {
+    font-weight: bold;
+    color: red;
+    padding-left: 40%;
+}
+.adDisclaimer {
+    font-size: 10px;
+    color: yellow;
+}
+input {
+    background-color: red;
+    font-weight: bold;
+}
+button, .button {
+    background-color: lime;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.pixelArt { /* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
+}

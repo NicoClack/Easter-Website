@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Happy Easter!
+        </title>
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+    </head>
+    <body>
+        <p>
+            Great! To finish the signup, please FAX me on this number: 57483920124857 and use the following code:
+        </p>
+        <textarea readonly id="code" style="resize: none;"></textarea> <br> <br>
+        <a href="index.html">Back</a>
+
+        <script type="text/javascript">
+            let emailList = location.href.split("=");
+            let email = "";
+            let i = 1;
+            while (i < emailList.length) {
+                email += emailList[i];
+                i++;
+            }
+            email = decodeURIComponent(email);
+
+            document.getElementById("code").innerHTML = email + "_" + (Math.round(Math.random() * 8999) + 1000);
+        </script>
+    </body>
+</html>
